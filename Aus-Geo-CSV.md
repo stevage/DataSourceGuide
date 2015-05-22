@@ -1,4 +1,9 @@
-# Aus-Geo-CSV 1.0
+---
+layout: default
+title: Aus-Geo-CSV
+permalink: /Aus-Geo-CSV/
+---
+## Aus-Geo-CSV 1.0
 
 **Aus Geo CSV** is a convention for publishing **point** or **region-mapped** geospatial data in CSV format to data.gov.au and other open data portals. Datasets in this format are supported by [TerriaJS](https://github.com/terriajs/terriajs) (and hence the [National Map](http://nationalmap.gov.au/)) and will be useful for other purposes too. A `State` column in a CSV file tagged `aus-geo-csv` can unambiguously be understood to refer to an Australian state, for example.
 
@@ -35,24 +40,19 @@ In data.gov.au, datasets that conform to this standard SHOULD be tagged "`aus-ge
 ###Quick summary
 Tables should look like one of these:
 
-```
-ID,Population,LGA_code,State
-1,100600,24600,VIC
-```
+    ID,Population,LGA_code,State
+    1,100600,24600,VIC
 
 or
 
-```
-ID,Population,Postcode,State
-1,28000,3000,VIC
-```
+
+    ID,Population,Postcode,State
+    1,28000,3000,VIC
 
 or
 
-```
-ID,Name,Lat,Lon
-1,Bacchus Marsh Airport,-37.7313,144.4212
-```
+    ID,Name,Lat,Lon
+    1,Bacchus Marsh Airport,-37.7313,144.4212
 
 EITHER a latitude/longitude pair, OR one or more of the following region fields should be provided.
 
@@ -93,7 +93,9 @@ For greater precision, additional fields `Suburb` and `State` MAY be provided. F
 (Note a POA "postal area" is [not quite the same as a postcode](http://www.abs.gov.au/websitedbs/censushome.nsf/home/factsheetspoa?opendocument&navpos=450).) 
 
 ### Local Government Area
+
 #### By ID
+
 ##### Recommended field names
 * `LGA_code` [TerriaJS support imminent]
 * `ABS2013_LGA`, `ABS2011_LGA`,`ABS2006_LGA`. (These longer names allow different versions of the ABS boundaries. This distinction is not currently respected by TerriaJS)
