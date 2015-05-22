@@ -15,7 +15,7 @@ In this document:
 * **Accepted**: A field name which is reasonably reusable. Generally supported by TerriaJS.
 * **Discouraged**: A field name which is ambiguous or not intuitive to a wide audience, but may be commonly used due to existing software. Possibly supported by TerriaJS but may be discontinued.
 
-It is generally acceptable to include "discouraged" or "avoid" fields if there is also recommended or accepted fields as the recommended or accepted fields will be used.
+It is generally acceptable to include "discouraged" fields if there is also recommended or accepted fields as the recommended or accepted fields will be used.
 
 **Document Status: initial use. This document will evolve, but it is unlikely that field names currently recommended will become deprecated.**
 
